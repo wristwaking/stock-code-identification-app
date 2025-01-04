@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="contain" id="app">
+        <audio src="../../assets/success.mp3" id="success-audio"></audio>
+        <audio src="../../assets/error.mp3" id="error-audio"></audio>
+        <div class="right">
+            <div class="right-menu">
+                <img class="left-menu-logo" src="../../assets/logo.png" alt="">
+
+                <div class="right-menu-time">
+                    <div>© 版权</div>
+                    <div>
+                        边缘骇客编程实验室
+                    </div>
+                </div>
+                <div class="right-menu-delete" @click="CloseApp">
+                    <svg t="1699982605168" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4058" width="25" height="25"><path d="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512c282.768 0 512-229.23 512-512S794.77 0 512 0z m234.76 656.252c7.808 7.808 7.806 20.472 0.002 28.284l-62.228 62.224c-7.808 7.808-20.47 7.814-28.286 0.002L512 602.51 367.75 746.76c-7.81 7.812-20.474 7.808-28.284 0l-62.226-62.224c-7.81-7.808-7.812-20.472 0-28.284L421.492 512l-144.25-144.25c-7.81-7.808-7.81-20.474 0-28.284l62.226-62.224c7.81-7.812 20.474-7.81 28.284 0L512 421.49l144.252-144.25c7.806-7.812 20.47-7.81 28.282 0l62.226 62.224c7.806 7.812 7.808 20.474 0 28.284L602.51 512l144.25 144.252z" fill="#E51C23" p-id="4059"></path></svg>
+                </div>
+            </div>
+
+            <div class="form-add-box">
+                <div class="form-add-menu">
+                    <div><input class="form-add-menu-input" :disabled="state" placeholder="X1 坐标值" type="number" v-model="X1"><svg t="1703002126693" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9232" width="15" height="15"><path d="M512 0C266.724 0 67.888 198.836 67.888 444.112 67.888 735 512 1024 512 1024s444.112-291 444.112-579.888C956.112 198.836 757.276 0 512 0z m0 595.345c-102.173 0-185-82.827-185-185s82.827-185 185-185 185 82.827 185 185-82.827 185-185 185z" fill="#444857" p-id="9233"></path></svg></div>
+                    <div><input class="form-add-menu-input" :disabled="state" placeholder="Y1 坐标值" type="number" v-model="Y1"><svg t="1703002126693" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9232" width="15" height="15"><path d="M512 0C266.724 0 67.888 198.836 67.888 444.112 67.888 735 512 1024 512 1024s444.112-291 444.112-579.888C956.112 198.836 757.276 0 512 0z m0 595.345c-102.173 0-185-82.827-185-185s82.827-185 185-185 185 82.827 185 185-82.827 185-185 185z" fill="#444857" p-id="9233"></path></svg></div>
+                </div>
+                <div class="form-add-menu">
+                    <div><input class="form-add-menu-input" :disabled="state" placeholder="X2 坐标值" type="number" v-model="X2"><svg t="1703002126693" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9232" width="15" height="15"><path d="M512 0C266.724 0 67.888 198.836 67.888 444.112 67.888 735 512 1024 512 1024s444.112-291 444.112-579.888C956.112 198.836 757.276 0 512 0z m0 595.345c-102.173 0-185-82.827-185-185s82.827-185 185-185 185 82.827 185 185-82.827 185-185 185z" fill="#444857" p-id="9233"></path></svg></div>
+                    <div><input class="form-add-menu-input" :disabled="state" placeholder="Y2 坐标值" type="number" v-model="Y2"><svg t="1703002126693" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9232" width="15" height="15"><path d="M512 0C266.724 0 67.888 198.836 67.888 444.112 67.888 735 512 1024 512 1024s444.112-291 444.112-579.888C956.112 198.836 757.276 0 512 0z m0 595.345c-102.173 0-185-82.827-185-185s82.827-185 185-185 185 82.827 185 185-82.827 185-185 185z" fill="#444857" p-id="9233"></path></svg></div>
+                </div>
+                <div class="form-add-result">
+                    <input class="form-add-result-input" type="text" id="add-time" disabled v-model="content" placeholder="配置截图区域坐标···">
+                    <img :src="image" alt="">
+                </div>
+                <div class="form-add-bottom">
+                    <div v-if="!state" @click="Restart">开启自动检测</div>
+                    <div v-else id="form-add-bottom-submit" @click="CopyBoard">{{copyTip}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vue.min.js"></script>
+    <script src="render.js"></script>
+</body>
+</html>
