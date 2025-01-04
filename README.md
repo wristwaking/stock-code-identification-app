@@ -1,5 +1,5 @@
 # stock-code-identification-app
-基于electron实现电脑屏幕区域股票编号识别桌面插件应用。
+stock-code-identification-app 是一款基于electron实现电脑屏幕区域股票编号识别桌面插件应用。
 
 ![image](https://github.com/user-attachments/assets/6044eb1f-7580-4b26-9781-81f8ffc81334)
 
@@ -15,7 +15,7 @@ npm run start
 
 打包可安装执行文件 package.json 配置信息
 
-```
+```json
 {
     "version": "1.0.0",
     "description": "股票代码识别电脑应用软件",
