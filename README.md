@@ -3,6 +3,9 @@ stock-code-identification-app 是一款基于electron实现电脑屏幕区域股
 
 ![image](https://github.com/user-attachments/assets/6044eb1f-7580-4b26-9781-81f8ffc81334)
 
+# 2025.01.05 说明
+.npmrc 配置镜像地址（若使用 vpn 可删除 .npmrc 配置）
+
 # 基于屏幕坐标位置定位区域识别
 
 ![image](https://github.com/user-attachments/assets/e9558faf-ac10-465e-ab66-f3d93a6f9943)
