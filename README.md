@@ -4,7 +4,10 @@ stock-code-identification-app 是一款基于electron实现电脑屏幕区域股
 ![image](https://github.com/user-attachments/assets/6044eb1f-7580-4b26-9781-81f8ffc81334)
 
 # 2025.01.05 说明
-.npmrc 配置镜像地址（若使用 vpn 可删除 .npmrc 配置）
+
+.npmrc 文件是 npm 配置文件，用于定义项目、用户或系统级别的 npm 配置。它存储着 npm 的各种设置，例如镜像源、代理设置、身份验证信息、缓存路径等。通过 .npmrc 文件，用户可以定制 npm 的行为，解决不同环境下的配置需求。
+
+当前项目 .npmrc 配置 electron 下载安装镜像地址（若下载出现报错问题 / 使用 vpn 可删除 .npmrc 配置）
 
 # 基于屏幕坐标位置定位区域识别
 
