@@ -1,5 +1,5 @@
 # stock-code-identification-app
-stock-code-identification-app 是一款基于electron实现电脑屏幕区域股票编号识别桌面插件应用。
+基于electron实现电脑屏幕区域股票代码识别电脑应用软件。通过tesseract.js库实现本地图片内容识别效果。
 
 ![image](https://github.com/user-attachments/assets/6044eb1f-7580-4b26-9781-81f8ffc81334)
 
