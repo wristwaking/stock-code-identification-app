@@ -1,5 +1,5 @@
 # stock-code-identification-app
-基于electron实现电脑屏幕区域股票代码识别电脑应用软件。通过tesseract.js库实现本地图片内容识别效果。
+基于electron实现电脑屏幕区域股票代码识别电脑应用软件。通过tesseract.js实现本地图片内容识别效果。Tesseract.js 是一个纯 JavaScript 编写的 OCR（光学字符识别）库，允许你在浏览器中执行图像中的文本识别。
 
 ![image](https://github.com/user-attachments/assets/6044eb1f-7580-4b26-9781-81f8ffc81334)
 
